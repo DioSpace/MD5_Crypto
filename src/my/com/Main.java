@@ -1,4 +1,4 @@
-package my;
+package my.com;
 
 public class Main {
 
@@ -6,7 +6,7 @@ public class Main {
     private static String ciphertext = "";
 
     public static void main(String[] args) {
-        ciphertext = MD5.getMD5(plaintext,32);
-        System.out.println("result:\n"+ciphertext);
+        ciphertext = MD5.getMD5(plaintext, 32);
+        System.out.println("result:\n" + ciphertext);
     }
 }

@@ -1,4 +1,4 @@
-package my;
+package my.com;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -10,6 +10,7 @@ public class MD5 {
             md.update(plainText.getBytes());//此处传入要加密的byte类型值
             byte[] digest = md.digest();//此处得到的是md5加密后的byte类型值
 
+            System.out.println("digest length : "+digest.length);
             /*
                下边的运算就是自己添加的一些二次小加密，记住这个千万不能弄错乱，
                    否则在解密的时候，你会发现值不对的（举例：在注册的时候加密方式是一种，

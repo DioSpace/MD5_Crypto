@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40cdf94e-a968-49ad-a6b9-4a27bd69bce7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MD5_Crypto/my/MD5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MD5_Crypto/my/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my/com/MD5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MD5_Crypto/my/com/MD5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MD5_Crypto/my/com/MD5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MD5_Crypto/my/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MD5_Crypto/my/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my/com/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my/com/MD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my/com/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,7 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DES_Crypto" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,9 +47,22 @@
       <recent name="F:\ideaProjects\MD5_Crypto\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my.com.Main" />
+      <module name="MD5_Crypto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.com.Test" />
       <module name="MD5_Crypto" />
       <extension name="coverage">
         <pattern>
@@ -58,6 +77,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -79,6 +99,8 @@
       <workItem from="1590595504101" duration="81000" />
       <workItem from="1590730569279" duration="176000" />
       <workItem from="1590730761242" duration="100000" />
+      <workItem from="1590821149996" duration="10917000" />
+      <workItem from="1591685993176" duration="3415000" />
     </task>
     <servers />
   </component>
@@ -90,21 +112,41 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="187" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1590730730213" />
-    <state width="1342" height="205" key="GridCell.Tab.0.bottom" timestamp="1590730860716">
+    <state x="488" y="179" key="FileChooserDialogImpl" timestamp="1590866576682">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590730860716" />
-    <state width="1342" height="205" key="GridCell.Tab.0.center" timestamp="1590730860716">
+    <state x="488" y="179" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590866576682" />
+    <state width="1342" height="205" key="GridCell.Tab.0.bottom" timestamp="1591689410744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590730860716" />
-    <state width="1342" height="205" key="GridCell.Tab.0.left" timestamp="1590730860716">
+    <state width="1342" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591689410744" />
+    <state width="1342" height="205" key="GridCell.Tab.0.center" timestamp="1591689410744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590730860716" />
-    <state width="1342" height="205" key="GridCell.Tab.0.right" timestamp="1590730860716">
+    <state width="1342" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591689410744" />
+    <state width="1342" height="205" key="GridCell.Tab.0.left" timestamp="1591689410744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590730860716" />
+    <state width="1342" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591689410744" />
+    <state width="1342" height="205" key="GridCell.Tab.0.right" timestamp="1591689410744">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591689410744" />
+    <state width="1342" height="255" key="GridCell.Tab.1.bottom" timestamp="1591689410739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="255" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591689410739" />
+    <state width="1342" height="255" key="GridCell.Tab.1.center" timestamp="1591689410739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="255" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591689410739" />
+    <state width="1342" height="255" key="GridCell.Tab.1.left" timestamp="1591689410739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="255" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591689410739" />
+    <state width="1342" height="255" key="GridCell.Tab.1.right" timestamp="1591689410739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="255" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591689410739" />
   </component>
 </project>

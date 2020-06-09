@@ -7,31 +7,31 @@ public class MD5 {
     public static String getMD5(String plainText, int length) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");//获取MD5实例
-            md.update(plainText.getBytes());//此处传入要加密的byte类型值
+            byte[] byteArr = plainText.getBytes();//获取字符串的byte数组，也就是获取字符串的二进制形式
+            md.update(byteArr);//此处传入要加密的byte数组
             byte[] digest = md.digest();//此处得到的是md5加密后的byte类型值
 
-            System.out.println("digest length : "+digest.length);
-            /*
-               下边的运算就是自己添加的一些二次小加密，记住这个千万不能弄错乱，
-                   否则在解密的时候，你会发现值不对的（举例：在注册的时候加密方式是一种，
-                在我们登录的时候是不是还需要加密它的密码然后和数据库的进行比对，但是
-            最后我们发现，明明密码对啊，就是打不到预期效果，这时候你就要想一下，你是否
-             有改动前后的加密方式）
-            */
-            int i;
-            StringBuilder sb = new StringBuilder();
-            for (int offset = 0; offset < digest.length; offset++) {
-                i = digest[offset];
-                if (i < 0)
-                    i += 256;
-                if (i < 16)
-                    sb.append(0);
-                sb.append(Integer.toHexString(i));//通过Integer.toHexString方法把值变为16进制
-            }
-            return sb.toString().substring(0, length);//从下标0开始，length目的是截取多少长度的值
+            String result = byteArrToHexString(digest);
+            return result.substring(0, length);//从下标0开始，length目的是截取多少长度的值
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
             return null;
         }
+    }
+
+    //将byte 数组 转换成16进制字符串
+    private static String byteArrToHexString(byte[] digest) {
+        StringBuilder sb = new StringBuilder();
+        for (int offset = 0; offset < digest.length; offset++) {
+            int tmp = digest[offset];//根据下标 取byte 并转化成 int型
+            if (tmp < 0) {//如果byte 对应的int为负,为了能转成16进制字符串,就加上一个模(FF,256)
+                tmp += 256;
+            }
+            if (tmp < 16) {//如果byte 只有低4位有值,转换成的16进制字符串只有一个，为了得到两个字符串可以在低位补0
+                sb.append(0);
+            }
+            sb.append(Integer.toHexString(tmp));//通过Integer.toHexString方法把值变为16进制
+        }
+        return sb.toString();//从下标0开始，length目的是截取多少长度的值
     }
 }

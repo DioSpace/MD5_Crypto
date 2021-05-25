@@ -1,4 +1,4 @@
-package my.com;
+package com.my;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
